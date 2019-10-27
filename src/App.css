@@ -61,8 +61,11 @@ input::placeholder {
 select {
   background-color: #1db954 !important;
   border: 5px solid #272121 !important;
+  border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   appearance: none;
   padding: 10px;
   font-size: 18px;
