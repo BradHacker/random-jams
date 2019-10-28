@@ -58,8 +58,10 @@ app.get('/:type/:genre', (req, res) => {
 
   const randQuery = randQueries[Math.floor(Math.random() * randQueries.length)];
 
-  const query =
-    genre !== 'random' ? randQuery + ` genre:"${genre}"` : randQuery;
+  let query = '';
+  if (type === 'track')
+    query = genre !== 'random' ? randQuery + ` genre:"${genre}"` : randQuery;
+  else query = genre !== 'random' ? genre : randQuery;
   if (process.env.NODE_ENV === 'development') console.log('query', query);
 
   const spotifyApi = new SpotifyWebApi({

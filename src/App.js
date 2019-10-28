@@ -95,7 +95,11 @@ class App extends React.Component {
         ) : (
           <div>
             <p className="text-light">Step 2 - Give a keyword</p>
-            <input type="text" placeholder="random" />
+            <input
+              type="text"
+              placeholder="random"
+              onChange={this.handleGenre}
+            />
           </div>
         )}
         <br />
