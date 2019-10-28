@@ -15,7 +15,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: scroll;
   font-family: 'Roboto', sans-serif;
   background-color: #1db954 !important;
   padding: 1vh 0;
